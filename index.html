@@ -3,32 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Invitation</title>
+    <title>Wedding Invitation - Sangavi & Adithya</title>
+    <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f9; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; max-width: 400px; width: 90%; border-top: 8px solid #2c3e50; }
-        h1 { color: #2c3e50; margin-bottom: 10px; font-size: 24px; }
-        .details { color: #555; line-height: 1.6; margin-bottom: 25px; }
-        .btn { display: inline-block; background-color: #34a853; color: white; padding: 12px 25px; text-decoration: none; border-radius: 25px; font-weight: bold; transition: background 0.3s; }
-        .btn:hover { background-color: #2d8e47; }
-        .icon { font-size: 40px; margin-bottom: 10px; }
+        body { margin: 0; padding: 0; font-family: 'Raleway', sans-serif; background: #fffaf0; color: #333; overflow-x: hidden; }
+        .bg-container { background: url('https://transparenttextures.com'), linear-gradient(135deg, #fff5f5 0%, #fffaf0 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; }
+        .invite-card { background: white; max-width: 500px; width: 100%; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); overflow: hidden; border: 1px solid #eee; text-align: center; position: relative; }
+        .photo-frame { width: 100%; height: 300px; overflow: hidden; position: relative; }
+        .photo-frame img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+        .invite-card:hover .photo-frame img { transform: scale(1.05); }
+        .content { padding: 40px 30px; }
+        h2 { font-family: 'Great Vibes', cursive; font-size: 48px; color: #b76e79; margin: 0; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 28px; margin: 15px 0; letter-spacing: 2px; text-transform: uppercase; color: #2c3e50; }
+        .and { font-family: 'Great Vibes', cursive; font-size: 32px; color: #b76e79; }
+        .intro-text { font-style: italic; font-size: 16px; line-height: 1.6; color: #666; margin-bottom: 25px; padding: 0 10px; }
+        .event-info { border-top: 1px solid #f1f1f1; border-bottom: 1px solid #f1f1f1; padding: 20px 0; margin-bottom: 30px; }
+        .info-item { margin: 10px 0; font-weight: 400; font-size: 18px; color: #444; }
+        .venue { font-weight: 700; color: #2c3e50; }
+        .btn-map { display: inline-block; background-color: #b76e79; color: white; padding: 14px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; letter-spacing: 1px; transition: 0.3s; box-shadow: 0 4px 15px rgba(183, 110, 121, 0.3); }
+        .btn-map:hover { background-color: #a65d68; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(183, 110, 121, 0.4); }
+        .footer { margin-top: 30px; font-size: 14px; color: #888; letter-spacing: 1px; }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <div class="icon">✨</div>
-        <h1>You're Invited!</h1>
-        <div class="details">
-            <p><strong>Time:</strong> August 27, 10:20 AM</p>
-            <p><strong>Venue:</strong> Abhimaani CONVENTION HALL<br>Basaveshwara Nagar</p>
+<div class="bg-container">
+    <div class="invite-card">
+        <!-- Couple Photo Section -->
+        <div class="photo-frame">
+            <img src="cupplePhoto.jpg" alt="Sangavi and Adithya">
         </div>
-        
-        <!-- Actionable Google Maps Hyperlink -->
-        <a href="https://maps.app.goo.gl/pomyVh4bPBRsVmqz8?g_st=ac" target="https://maps.app.goo.gl/pomyVh4bPBRsVmqz8?g_st=ac" class="btn">
-            📍 View Location on Maps
-        </a>
+
+        <div class="content">
+            <p class="intro-text">"Two souls with but a single thought, two hearts that beat as one." <br>Together with our families, we invite you to celebrate our union.</p>
+            
+            <h2>Sangavi</h2>
+            <div class="and">&</div>
+            <h2>Adithya</h2>
+            
+            <h1>Wedding Ceremony</h1>
+            
+            <div class="event-info">
+                <div class="info-item">📅 August 27, 2024</div>
+                <div class="info-item">⏰ 10:30 AM</div>
+                <div class="info-item venue">📍 Abhimaani CONVENTION HALL</div>
+                <div class="info-item">Basaveshwara Nagar, Bengaluru</div>
+            </div>
+
+            <p class="intro-text">Your presence and blessings mean the world to us as we begin our new journey together.</p>
+            
+            <!-- Google Maps Button -->
+            <a href="https://maps.app.goo.gl/ciQ8Z8VhPYyLWQyq6?g_st=ac" target="_blank" class="btn-map">
+                VIEW ON GOOGLE MAPS
+            </a>
+            
+            <div class="footer">#SangaviWedsAdithya</div>
+        </div>
     </div>
+</div>
 
 </body>
 </html>
